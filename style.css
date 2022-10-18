@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #292a2d;
+}
+
+.nav__logo-btn {
+  overflow: hidden;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  background: #0f46bd;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.nav__logo-btn .h2 {
+  color: #fff;
+}
+.nav__logo-btn .h2 span {
+  color: #b8ccf7;
+}
+
+.nav__logo-btn .button {
+  margin-left: 1em;
+  margin-top: 0.4em;
+  margin-right: 2.7em;
+  padding-right: 0.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  width: 2em;
+  height: 1.2em;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  outline: none;
+}
+.nav__logo-btn .button .btn {
+  width: 2em;
+  height: 0.25em;
+  background: #fff;
+  transition: 0.3s ease all;
+  border-radius: 0.2em;
+}
+.nav__logo-btn .button .line2 {
+  transform: rotate(45deg) translateY(9px);
+  margin-left: 15px;
+  transition: 0.3s ease all;
+}
+.nav__logo-btn .button .line1 {
+  display: none;
+  transition: 0.3s ease all;
+}
+.nav__logo-btn .button .line3 {
+  transform: rotate(-45deg) translateY(-9px);
+  margin-left: 15px;
+  transition: 0.3s ease all;
+}
+
+.nav {
+  color: #fff;
+  overflow: hidden;
+  width: 3em;
+  min-height: 100vh;
+  background: #2555be;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 3em;
+}
+.nav__list {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: min-content;
+  transition: hover 0.5s ease;
+  border-bottom: 0.001em solid rgba(255, 255, 255, 0.205);
+}
+.nav__list li {
+  position: relative;
+  padding: 0.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav__list li i {
+  font-size: 1.2em;
+  padding: 1em 0.2em;
+  padding-left: 0.3em;
+  text-align: center;
+}
+.nav__list li span {
+  position: absolute;
+  left: 5em;
+  text-align: center;
+}
+.nav__list :hover {
+  background: #003dc0;
+}
+
+.logo-btn {
+  width: 18em;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.widthLess {
+  width: 3em;
+  transition: 0.7s ease;
+}
